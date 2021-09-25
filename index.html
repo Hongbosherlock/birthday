@@ -92,7 +92,7 @@
  </audio> 
 
 <div class="cs">
-    <img src="https://gitee.com/HongboSherlock/blog-image/raw/master/img/926happy.png" id="logo">
+    <img src="img/926happy.png" id="logo">
 </div>
 <canvas class="canvas" width="1820" height="905"></canvas>
 <p class="text" style="color: #ed3073;">
@@ -161,8 +161,8 @@
                 requestFrame.call(window, this.loop.bind(this));
             },
             adjustCanvas: function () {
-                canvas.width = window.innerWidth - 100;
-                canvas.height = window.innerHeight - 30;
+                canvas.width = window.innerWidth ;
+                canvas.height = window.innerHeight ;
             },
             clearFrame: function () {
                 context.clearRect(0, 0, canvas.width, canvas.height);
@@ -388,7 +388,7 @@
         var gap = 13,
             shapeCanvas = document.createElement('canvas'),
             shapeContext = shapeCanvas.getContext('2d'),
-            fontSize = 500,
+            fontSize = 400,
             fontFamily = 'Avenir, Helvetica Neue, Helvetica, Arial, sans-serif';
         function fit() {
             shapeCanvas.width = Math.floor(window.innerWidth / gap) * gap;
